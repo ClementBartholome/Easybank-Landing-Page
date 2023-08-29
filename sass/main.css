@@ -1,0 +1,131 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+:root {
+  --primary: hsl(233, 26%, 24%);
+  --secondary: hsl(136, 65%, 51%);
+  --tertiary: hsl(192, 70%, 51%);
+  --grayish-blue: hsl(233, 8%, 62%);
+  --light-grayish-blue: hsl(220, 16%, 96%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-size: 18px;
+  font-family: "Public Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+h1,
+h2 {
+  color: var(--primary);
+}
+
+@media (max-width: 1024px) {
+  .articles__card img {
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .hero__image {
+    position: relative;
+    background: url("/images/bg-intro-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .hero__image .mockups {
+    width: 100%;
+    height: 86.6666666667vw;
+    max-height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: bottom;
+       object-position: bottom;
+  }
+  .bg-hero-desktop {
+    display: none;
+  }
+  .bg-hero-mobile {
+    display: block;
+    position: absolute;
+    z-index: -1;
+  }
+}
+.hidden {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  header {
+    margin: 20px;
+  }
+  header .header__icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header nav ul {
+    display: none;
+    padding: 0;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  header nav.active ul {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: #ffffff;
+    position: absolute;
+    text-align: center;
+    box-shadow: 0 20px 20px 0px rgba(44, 44, 44, 0.3215686275);
+    transition: width 0.3s ease;
+    z-index: 9999;
+    height: -moz-max-content;
+    height: max-content;
+    top: 60px;
+    right: 51%;
+    transform: translate(50%, 0%);
+    width: 85% !important;
+    border-radius: 4px;
+    padding: 25px 0;
+  }
+}
+/* Modèle
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./utils/extensions";
+@import "./base/base";
+@import "./base/typography";
+@import "./components/buttons";
+@import "./layouts/header";
+@import "./layouts/nav";
+@import "./layouts/container";
+@import "./layouts/form";
+@import "./pages/work";
+@import "./pages/about";
+@import "./pages/project";
+
+*//*# sourceMappingURL=main.css.map */

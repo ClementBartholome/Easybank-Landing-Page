@@ -1,0 +1,26 @@
+@media (max-width: 1024px) {
+  .hero__image {
+    position: relative;
+
+    background: url("/images/bg-intro-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .mockups {
+      width: 100%;
+      height: calc(100vw * 325 / 375);
+      max-height: 100vh;
+      object-fit: cover;
+      object-position: bottom;
+    }
+  }
+
+  .bg-hero-desktop {
+    display: none;
+  }
+  .bg-hero-mobile {
+    display: block;
+    position: absolute;
+    z-index: -1;
+  }
+}
