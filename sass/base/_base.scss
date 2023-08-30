@@ -17,16 +17,48 @@ a {
   text-decoration: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 li {
   list-style: none;
 }
 
+ul {
+  margin: 0;
+}
+
 .overlay {
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 999;
+}
+
+main {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
 }
 
 h1,
-h2 {
+h2,
+h3 {
   color: var(--primary);
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  color: var(--grayish-blue);
+}
+
+@media (max-width: 1024px) {
+  body,
+  html {
+    font-size: 14px;
+  }
 }
